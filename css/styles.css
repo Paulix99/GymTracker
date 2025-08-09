@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.frontpage{
+	background-image: url(../img/bodybuilder2_1.jpg);
+	height: 80vh;
+	background-size: cover;
+	margin-top: 10vh;
+	display: flex;
+	background-attachment: fixed;
+	background-position: 0% 20%;
+}
+
+.frontpage > div{
+	color: white;
+	margin-left: 10%;
+	margin-top: 10%;
+	height: 30vh;
+	width: 40vw;
+	background-color: #3339;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 20px;
+	padding-left: 10px;
+	text-align: center;
+}
+
+.frontpage h1{
+	font-size: 60px;
+	color: orange;
+	text-shadow: 1px 1px 1px rgba(255, 101, 0, 1), -1px 1px 1px rgba(255, 101, 0, 1), 1px -1px 1px rgba(255, 101, 0, 1), -1px -1px 1px rgba(255, 101, 0, 1);
+}
+
+.frontpage p{
+	font-size: 20px;
+	margin-bottom: 80px;
+}
+
+h3{
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.debug{
+	height: 200vh;
+}
+
+.dumbbell_img{
+animation-name: loop_movement;
+animation-duration: 1s;
+animation-iteration-count: infinite;
+animation-fill-mode: both;
+animation-direction: alternate;
+animation-timing-function: linear;
+width: 50px;
+margin-left: 20px;
+margin-bottom: 30px;
+}
+
+.frontpage > div > div{
+	display: flex;
+	align-items: center;
+}
+
+@keyframes loop_movement{
+	from {
+transform: scale(1) ;
+  }
+  to {
+    transform: scale(1.3);
+  }
+
+  }
+}
+
