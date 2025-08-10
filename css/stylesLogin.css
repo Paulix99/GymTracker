@@ -1,0 +1,54 @@
+body {
+    padding: 5%;
+    margin: 10%;
+	background: url(../img/loginBackground.jpeg) no-repeat center/80%;
+    font-family: sans-serif;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    align-items: center;
+    color:white;
+    text-shadow: 3px 3px 3px black;
+    /*background-color: blue;*/
+}
+
+.flexItem {
+    text-wrap: wrap;
+}
+
+.loginText {
+    box-sizing: border-box;
+    font-weight:bold;
+    font-size: 3vw;
+    flex: 60%;
+    text-align: left;
+    /*background-color: blueviolet;*/
+}
+
+.loginSection {
+    background-color: #000B;
+    box-shadow: 0px 0px 15px #0001;
+    flex: 40%;
+    font-size: 2vw;
+    margin: 0 5% 0 5%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.formItem {
+    margin-top: 3%;
+    padding: 10px;
+    color: white;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    border-color: aliceblue;
+    padding: 3%
+}
