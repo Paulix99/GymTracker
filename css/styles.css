@@ -9,7 +9,6 @@
 	/*background-image: url(../img/bodybuilder2_1.jpg);*/
 	min-height: 80vh;
 	/*background-size: cover;*/
-	margin-top: 10vh;
 	display: flex;
 	/*background-attachment: fixed;*/
 	/*background-position: 0% 20%;*/
@@ -17,6 +16,7 @@
 	width: 100%;
 	background: url(../img/bodybuilder2_1.jpg) no-repeat center/cover;
 	margin-bottom: 20vh;
+	margin-top: 10vh;
 }
 
 .frontpage > div{
@@ -159,3 +159,100 @@ input {
 		align-self: center;
 	}
 }
+
+header{
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+
+nav{
+	height: 10vh;
+}
+
+nav ul{
+	width: 60%;
+	margin: auto;
+	justify-content: center;
+	gap: 10%;
+	align-self: center;
+}
+
+nav ul, nav{
+	display: flex;
+	align-items: center;
+}
+
+nav li{
+	display: flex;
+}
+
+nav a{
+	text-decoration: none;
+	color: orange;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#register-btn{
+	width: 120px;
+	margin-right: 10px;
+	height: 70%;
+	border-radius: 50px;
+	background-color: orange;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.close-menu{
+	display: none;
+	background-color: black;
+	color: orange;
+	font-size: 40px;
+	font-weight: bold;
+	border-style: none;
+	position: absolute;
+}
+
+@media screen and (max-width: 600px){
+	nav ul{
+		flex-direction: column;
+		justify-content: space-around;
+		height: 40vh;
+		gap: 0;
+		margin: 0;
+	}
+
+	nav{
+		flex-direction: column;
+		justify-content: center;
+		height: 100vh;
+	}
+
+	#register-btn{
+		margin-top: 10vh;
+		height: 10vh;
+		width: 50%;
+		font-size: 30px;
+	}
+
+	nav a{
+		font-size: 28px;
+	}
+
+	.close-menu{
+		display: block;
+		align-self: flex-end;
+		top: 0;
+	}
+}
+
+@media screen and (min-width: 600px){
+	nav ul{
+display: flex;
+	}
+
+	#register-btn{
+		display: block;
+	}
